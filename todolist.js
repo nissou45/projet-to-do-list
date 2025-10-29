@@ -13,3 +13,14 @@ for (const btn of btn_delete) {
     supprimer_element(element_de_liste); // supprime m'element
   });
 }
+
+// on recupere toute les balises li de la page
+const items = document.querySelectorAll("li");
+
+// on cree une boucle, pour chaque li on ajoute un event
+for (const li of items) {
+  // Quand on clique sur une tâche, elle devient "complétée"
+  li.addEventListener("click", function () {
+    li.classList.toggle("completed");
+  });
+}

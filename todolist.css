@@ -46,3 +46,10 @@ ul {
   border: 1px solid #040404;
   border-radius: 8px;
 }
+
+/* Classe pour les tâches terminées */
+.completed {
+  text-decoration: line-through; /* barre le texte */
+  color: rgb(194, 140, 140); /* change la couleur du texte */
+  background-color: #f68989; /* fond clair pour indiquer que c’est fait */
+}
